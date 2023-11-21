@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&family=Single+Day&display=swap');
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+a{
+  text-decoration:none;
+}
+ul{
+  list-style:none;
+}
+#container {
+  width:1200px;
+  margin:0 auto;
+}
+header {
+  width:100%;
+  height:100px;
+  background-color:#07c;
+}
+#logo {
+  width:250px;
+  height:100px;
+  float:left;
+} 
+#logo h1{
+  font-family: 'Merienda', 바탕;
+  font-size:40px;
+  font-weight:700;
+  color:#fff;
+  text-shadow:0 -1px #222;
+  line-height:100px;
+  padding-left:20px;
+}
+nav {
+  width:900px;
+  height:100px;
+  float:right;
+  padding-top:40px;
+}
+#topmenu{
+  height:60px;
+}
+#topmenu > li{
+  float : left;
+  position:relative;
+}
+#topmenu > li > ul{
+  display:none;
+  position:absolute;
+  width:160px;
+  background-color:rgba(255,255,255,0.6);
+  margin:0;
+  left:20px;
+}
+#topmenu > li> ul > li{
+  padding:10px 10px 10px 30px;
+}
+#topmenu > li > a{
+  display:block;
+  color:#fff;
+  font-weight:600;
+  text-shadow:0 1px #07c;
+  padding:20px 60px;
+}
+#topmenu > li > ul > li > a{
+  font-size:14px;
+  padding:10px;
+  color:#000;
+}
+#topmenu > li > ul > li > a:hover{
+  color: #f00;
+}
+#topmenu > li:hover>  ul{
+  display:block;
+  Z-index:10;
+}
+#topmenu > li > a:hover{
+  color:#000;
+  text-shadow:0 -1px #07c;
+}
+#slideShow {
+  width:1200px;
+  height:300px;
+  clear:both;
+  overflow:hidden;
+} 
+#contents{
+  width:1200px;
+  height:300px;
+}
+#tab {
+  width:600px;
+  height:300px;
+  float:left;
+}
+#tab input[type='radio']{
+  display:none;
+}
+#tab label{
+  display:inline-block;
+  margin:0 0;
+  padding:15px 25px;
+  font-weight:600;
+  text-align:center;
+  color:#aaa;
+  border:1px solid transparent;
+}
+#tab label:hover{
+  color:#222;
+  cursor:pointer;
+}
+#tab input:checked + label{
+  color:#b00;
+  border:1px solid #ddd;
+  background-color:#eee;
+}
+#links{
+  width:600px;
+  height:300px;
+  float:right;
+  margin-top:55px;
+} 
+#links ul{
+  overflow:hidden;
+  padding:0
+}
+#links ul li{
+  width:33%;
+  margin:10px 0;
+  float:left;
+  text-align:center;
+}
+#links ul li a span{
+  display:block;
+  margin:0 auto;
+  width:150px;
+  height:150px;
+  border-radius:100%;
+  border:1px solid #ddd;
+  line-height:150px;
+}
+#quick-icon1{
+  background-image:url('C:/langchain/poet/CSS/icon-1.jpg');
+}
+#quick-icon2{
+  background-image:url('C:/langchain/poet/CSS/icon-2.jpg');
+}
+#quick-icon3{
+  background-image:url('C:/langchain/poet/CSS/icon-3.jpg');
+}
+#links ul li a p{
+  margin-top:15px;
+  font-weight:600;
+  color:#666;
+}
+
+.tabContents{
+  display:none;
+  padding:20px 0 0;
+  border-top:1px solid #ddd;
+}
+
+#notice ul{
+  list-style:disc;
+  margin-left:30px;
+}
+#notice ul li{
+  font-size:12px;
+  line-height:2.5;
+}
+#gallary ul li{
+  display:inline;
+}
+#tab1:checked ~ #notice{
+  display:block;
+}
+#tab2:checked ~ #gallary{
+  display:block;
+}
+footer {
+  clear:both;
+  width:1200px;
+  height:100px;
+  border-top:1px solid #222;
+}
+
+#bottomMenu{
+  width:100%;
+  height:20px;
+}
+#bottomMenu ul{
+  margin-top:15px;
+}
+#bottomMenu ul li{
+  float:left;
+  padding:5px 20px;
+  border-right:1px solid #ddd;
+}
+#bottomMenu ul li:last-child{
+  border-right:none;
+  position:relative;
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited{
+  color:#666;
+  font-size:15px;
+}
+#sns{
+  position:absolute;
+  right:0;
+}
+#sns ul li{
+  border:none;
+  padding:5px;
+}
+#company{
+  clear:left;
+  margin-top:30px;
+  padding-left:20px;
+}
+p{
+  font-size:14px;
+  color:#aaa;
+}
